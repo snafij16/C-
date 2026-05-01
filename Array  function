@@ -1,0 +1,22 @@
+#include<stdio.h>
+int sum (int a[],int n); //function prototype 
+int main ()
+{
+	int b[2],result;
+	int i;
+	printf ("Enter the value off b");
+	for (int i=0;i<2;i++)
+	scanf("%d",&b[i]);
+	
+	
+	result =sum(b,2) ; //function call
+	printf("%d",result);
+	return 0;
+}
+int sum (int a[],int n)
+{
+	int i,sum=0;
+	for (i=0;i<n;i++)
+	sum =sum +a[i];
+	return sum;
+}
